@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5 Dropdowns</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap 5 Dropdowns</h1>
+        <div class="container mt-5">
+            <h2>Basic Dropdown</h2>
+            <p>A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list:</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+                <h3 class="mt-3">Example Explained</h3>
+                <p>The .dropdown class indicates a dropdown menu.</p>
+                <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and the data-bs-toggle="dropdown" attribute.</p>
+                <p>Add the .dropdown-menu class to a container element, like &lg;div&gt; or &lg;ul&gt;, to actually build the dropdown menu. Then add the .dropdown-item class to each element (links or buttons) inside the dropdown menu</p>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2>Dropdown Divider</h2>
+            <p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal border:</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="#" class="dropdown-item">Another link</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container mt-5">
+            <h2>Dropdown Header</h2>
+            <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><h5 class="dropdown-header">Dropdown header</h5></li>
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                    <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+                    <li><a href="" class="dropdown-item">Another link</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2>Disable and Active items</h2>
+            <p>Highlight a specific dropdown item with the .active class (adds a blue background color).To disable an item in the dropdown menu, use the .disabled class (gets a light-grey text color and a "no-parking-sign" icon on hover):</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Normal</a></li>
+                    <li><a href="#" class="dropdown-item active">Active</a></li>
+                    <li><a href="#" class="dropdown-item disabled">Disable</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2>Dropdown Position</h2>
+            <p>You can also create a "dropend" or "dropstart" menu, by adding the .dropend or .dropstart class to the dropdown element. Note that the caret/arrow is added automatically:</p>
+            <div class="container mt-3">
+                <h3>Dropdowns</h3>
+                <p>Add the .dropend class next to the dropdown menu to right-align the dropdown. Note that the caret/arrows is added automaticall</p>
+                <div class="dropdown dropend">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Dropend
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Normal</a></li>
+                        <li><a href="#" class="dropdown-item active">Active</a></li>
+                        <li><a href="#" class="dropdown-item disabled">disabled</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <h3>Dropdowns</h3>
+                <p>Add the .dropstart class next to the dropdown menu to left-align the dropdown. Note that the caret/arrow is added automatically. Also note that we float the dropdown to the right:</p>
+                <div class="dropdown dropstart text-end">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Dropend
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Normal</a></li>
+                        <li><a href="#" class="dropdown-item active">Active</a></li>
+                        <li><a href="#" class="dropdown-item disabled">disabled</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-5">
+            <h2>Dropdown Menu Right</h2>
+            <p>To right-align the dropdown menu, add the .dropdown-menu-end class to the element with .dropdown-menu</p>
+            <div class="dropdown dropdown-menu-end">
+                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Wide dropdown button to demostrate this example</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2>Dropup</h2>
+            <p>If you want the dropdown menu to expand upwards instead of downwards, change the &lt;div&gt; element with class="dropdown" to "dropup":</p>
+            <div class="dropup">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropup button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2>Dropup Text</h2>
+            <p>The .dropdown-item-text class is used to add plain text to a dropdown item, or used on links for default link styling.:</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Link 1</a></li>
+                    <li><a href="#" class="dropdown-item">Link 2</a></li>
+                    <li><a href="#" class="dropdown-item">Link 3</a></li>
+                    <li><a href="#" class="dropdown-item-text">Text Link</a></li>
+                    <li><span class="dropdown-item-text">Just Text</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2>Grouped Buttons with a Dropdown</h2>
+            <div class="btn-group">
+                <button type="button" class="btn btn-dark">Apple</button>
+                <button type="button" class="btn btn-dark">Samsung</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                        Sony
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item bg-dark text-white">Smartphone</a></li>
+                        <li><a href="#" class="dropdown-item">Tablet</a></li>
+                        <li><a href="#" class="dropdown-item">PlayStation</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2>Vertical Button Group w/ Dropdown</h2>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-dark">Apple</button>
+                <button type="button" class="btn btn-dark">Samsung</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                        Sony
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Smartphone</a></li>
+                        <li><a href="#" class="dropdown-item">Tablet</a></li>
+                        <li><a href="#" class="dropdown-item">PlayStation</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+</body>
+</html>
